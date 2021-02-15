@@ -1,0 +1,618 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 60px 0;
+}
+
+.small-cards-container, .big-cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1320px;
+}
+
+.card-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-check > img {
+    margin: 22px 0 28px;
+    width: 39px;
+}
+
+/* ----------Cards---------- */
+
+.card {
+    width: 402px;
+    height: 265px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 5px rgba(183, 209, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+}
+
+/* Card-1 */
+
+.card-1 {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-1-divider {
+    height: 204px;
+    width: 5px;
+    background: #85BB65;
+    border-radius: 10px;
+    margin: 0 21px;
+}
+
+/* Card-2 */
+
+.card-2 {
+    flex-direction: column;
+    padding-left: 28px;
+    padding-top: 14px;
+}
+
+.card-2-divider {
+    height: 1px;
+    width: 101.5px;
+    background: #85BB65;
+    border-radius: 2px;
+    margin:8px 0;
+}
+
+.card-2 .company-name {
+    margin: 0px;
+}
+
+.card-2 .phone-email {
+    display: flex;
+}
+
+.card-2 .link {
+    margin: 0;
+}
+
+.card-2 .email {
+    margin-left: 40px;
+}
+
+/* Card-3 */
+
+.card-3 .profile-pic {
+    flex: 0.8;
+    padding-top: 35px;
+    padding-left: 27px;
+}
+
+.card-3 .signature-details {
+    flex: 2;
+    padding-top: 50px;
+}
+
+.card-3 .company-name, .card-3 .job-title {
+    display: inline-block;
+    margin: 11px 0 0 0;
+
+}
+
+.card-3-divider {
+    height: 4px;
+    width: 235px;
+    background: #85BB65;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Card Componentes */
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.first-name, .last-name {
+    display: inline-block;
+    font-size: 1em;
+    color: #5C667A;
+}
+
+.job-title {
+    color: #828282;
+    font-size: 14px;
+    margin: 11px 0;
+}
+
+.company-name {
+    color: #85BB65;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    background: #85BB65;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.phone, .email, .link {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 9px 0;
+    color: #828282;
+}
+
+.deactive-card * {
+    color: #C4C4C4;
+}
+
+.card-2 .profile-img, .card-3 .profile-img {
+    opacity: 0.6;
+}
+
+.deactive-card .icon, .card-2-divider, .card-3-divider {
+    background: #C4C4C4;
+}
+
+/* Blue Divider */
+
+.blue-divider {
+    width: 100%;
+    height: 1px;
+    background: #B8E4FF;
+    margin-bottom: 80px;
+}
+
+
+/* Input Card */
+
+.big-card {
+    width: 578px;
+    height: 397px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 5px rgba(183, 209, 255, 0.2);
+    border-radius: 10px;
+}
+
+.input-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.profile-avatar {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-avatar img {
+    width: 102px;
+    margin: 0 auto
+}
+
+.profile-avatar-divider {
+    width: 234px;
+    height: 1px;
+    background: #85BB65;
+    margin: 10px 0 20px;
+}
+
+.change-color {
+    position: absolute;
+    right: 40px;
+}
+
+.change-color button {
+    background: #59C0FF;
+    border: none;
+    color: #fff;
+    padding: 7px;
+    outline: none;
+    font-size: 13px;
+    box-shadow: 0px 4px 4px rgba(207, 237, 255, 0.5);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    font-size: 10px;
+}
+
+.change-color button:focus {
+    background: #4aafee;
+}
+
+.input-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-fields {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 22px;
+
+}
+
+.input-section p {
+    font-size: 16px;
+    color: #5C667A;
+
+}
+
+input {
+    width: 216px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 5px 2px;
+    margin-top: 12px ;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #5C667A;
+}
+
+/* Output Card */
+
+.output-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.three-buttons {
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 0 0 2px 8px;
+    
+}
+
+.output-card-divider {
+    width: 5px;
+    height: 260px;
+    background: #F4C20D;
+    margin: 0 28px;
+}
+
+.output-card .first-name, .output-card .last-name {
+    font-size: 20px;
+}
+
+.output-card .job-title {
+    font-size: 18px;
+}
+
+.output-card .company-name {
+    font-size: 18px;
+    color: #F4C20D;
+    margin-bottom: 16px;
+}
+
+.output-card .icon {
+    background: #F4C20D;
+}
+
+.output-card .phone, .output-card .email, .output-card .link {
+    font-size: 16px;
+    margin: 13px 0;
+}
+
+.signature-btn {
+    position: absolute;
+    bottom: 31px;
+    right: 22px;
+    color: #fff;
+    background: #59C0FF;
+    border: none;
+    padding: 5px 9px;
+    box-shadow: 0px 4px 4px rgba(207, 237, 255, 0.5);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signature-btn:focus {
+    background: #4aafee;
+}
+
+/* Output Card 2 */
+
+.big-profile-img {
+    border-radius: 50%;
+}
+
+.output-2-divider {
+    width: 160px;
+    margin: 10px 0;
+     background: #F4C20D;
+}
+
+.output-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.output-card .phone-email {
+    display: flex;
+}
+
+.output-card .phone-email .email {
+    margin-left: 70px;
+}
+
+.output-card .company-name {
+    margin-bottom: 8px;
+}
+
+.output-card .link {
+    margin-top: 5px;
+}
+
+
+/* Output Card-3 */
+
+.output-3 {
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 0px;
+}
+
+.output-3 .signature-details {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.output-3 .company-name, .output-3 .job-title {
+    display: inline-block;
+    margin: 15px 0 0 0;
+
+}
+
+.output-3-divider {
+    width: 300px;
+    height: 4px;
+    background: #F4C20D;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    body {
+        display: block;
+        margin: 0;
+    }
+    .small-cards-container, .big-cards-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .card-check {
+        margin-bottom: 50px;
+    }
+
+    .first-card {
+        margin-top: 60px;
+    }
+
+    .big-card {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+
+.big-card {
+    width: 402px;
+    height: 265px;
+}
+
+.input-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-section {
+    margin-top: 5px;
+}
+
+.profile-avatar img {
+    width: 62px;
+    margin: 0 auto;
+}
+
+.profile-avatar-divider {
+    width: 144px;
+    margin: 5px 0 10px;
+}
+
+.change-color {
+    right: 20px;
+    top: 10px;
+}
+
+.change-color button {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.input-fields {
+    margin-bottom: 12px;
+}
+
+.input-section p {
+    font-size: 14px;
+}
+
+input {
+    width: 156px;
+    padding: 3px;
+    margin-top: 8px ;
+    font-size: 14px;
+}
+
+/* Output Card */
+.output-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.three-buttons {
+    position: absolute;
+    top: 0px;
+    padding: 0 0 0px 8px;
+    
+}
+
+.output-card-divider {
+    height: 200px;
+    margin: 0 21px;
+}
+
+.output-2-divider {
+    width: 5px;
+    height: 200px;
+    background: #F4C20D;
+    margin: 0 28px;
+    border-radius: 5px;
+}
+
+.output-card .first-name, .output-card .last-name {
+    font-size: 16px;
+}
+
+.output-card .job-title {
+    font-size: 14px;
+}
+
+.output-card .company-name {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.output-card .phone, .output-card .email, .output-card .link {
+    font-size: 14px;
+    margin: 9px 0;
+}
+
+.signature-btn {
+    bottom: 15px;
+    right: 20px;
+    font-size: 12px;
+}
+
+.output-card .profile-img {
+    width: 82px;
+}
+
+.card-check {
+    margin-bottom: 25px;
+}
+
+/* Output Card 2 */
+
+.output-2 {
+    flex-direction: column;
+    padding-left: 28px;
+    padding-top: 14px;
+}
+
+.output-2-divider {
+    height: 1px;
+    width: 101.5px;
+    margin:4px 0;
+}
+
+.output-2 .job-title {
+    margin: 5px 0;
+}
+
+.output-2 .company-name {
+    margin: 0px;
+}
+
+.output-2 .link {
+    margin: 0;
+}
+
+.big-profile-img {
+    width: 82px;
+    margin-top: 0px;
+}
+
+.output-card .phone-email .email {
+    margin-left: 40px;
+}
+
+/* Output Card - 3 */
+
+.output-3-divider {
+    width: 210px;
+    height: 4px;
+    background: #F4C20D;
+    margin: 2px 0 20px 0;
+    border-radius: 10px;
+}
+
+.output-3 .job-title, .output-3 .company-name {
+    margin: 10px 0;
+}
+
+}
+
+@media (max-width: 450px) {
+    html {
+        zoom: 85%;
+    }
+}
+
+@media (max-width: 370px) {
+    html {
+        zoom: 80%;
+    }
+}
